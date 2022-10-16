@@ -35,11 +35,11 @@ public class Principal {
 		
 		if(x) {
 			System.out.print("O seu retângulo ("+ra.getA()+" "+ra.getL()+" "+ra.getX()+" "+ra.getY()+") ");
-			System.out.println("Colidiu com o retângulo");
-			System.out.println("( "+ra.getA()+" "+ra.getL()+" "+ra.getX()+" "+ra.getY()+" )");
+			System.out.println("Colidiu(1) com o retângulo");
+			System.out.println("( "+rb.getA()+" "+rb.getL()+" "+rb.getX()+" "+rb.getY()+" )");
 		} else {
 			System.out.print("O seu retângulo ("+ra.getA()+" "+ra.getL()+" "+ra.getX()+" "+ra.getY()+") ");
-			System.out.println("Não colidiu com o retângulo");
+			System.out.println("Não colidiu(0) com o retângulo");
 			System.out.println("( "+rb.getA()+" "+rb.getL()+" "+rb.getX()+" "+rb.getY()+" )");
 		}
 		
