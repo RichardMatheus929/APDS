@@ -8,7 +8,7 @@ import java.time.Period;
 public class Principal {
 
 	public static void main(String[] args) throws InterruptedException {
-		int op = 1;
+		int op = 33;
 		do {
 			Scanner ler = new Scanner(System.in);
 			Calcular c = new Calcular();
