@@ -60,12 +60,6 @@
             <Label fx:id="labeltotal" layoutX="567.0" layoutY="440.0" prefHeight="17.0" prefWidth="98.0" textFill="WHITE" />
             <Label layoutX="498.0" layoutY="440.0" text="Valor total :" textFill="WHITE" />
             <Button fx:id="botaoremove" layoutX="647.0" layoutY="436.0" mnemonicParsing="false" onAction="#remove" text="Remover Produto" />
-            <Button fx:id="casa" layoutX="265.0" layoutY="627.0" mnemonicParsing="false" onAction="#addcasa" text="Button" />
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="11.0" layoutY="588.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/png-clipart-house-house.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </content>
