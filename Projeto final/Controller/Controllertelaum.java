@@ -45,8 +45,8 @@ public class Controllertelaum {
     	} else {
     		
     		Alert a = new Alert(Alert.AlertType.WARNING);
-    		a.setTitle("Senha inv·lida");
-    		a.setHeaderText("Tente novamente");
+    		a.setTitle("Senha inv√°lida!");
+    		a.setHeaderText("Tente novamente.");
     		a.showAndWait();
     		
     	
