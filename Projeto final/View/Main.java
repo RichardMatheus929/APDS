@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 
@@ -13,6 +14,7 @@ public class Main extends Application {
 	private static Stage stage;
 	private static Scene um;
 	private static Scene dois;
+	private static Scene tres;
 	
 	
 	public static void mudartela(int src) {
@@ -22,7 +24,7 @@ public class Main extends Application {
 			break;
 		case 2: stage.setScene(dois);
 			break;
-		case 3: stage.setScene(dois);
+		case 3: stage.setScene(tres);
 			break;
 		}
 	}
@@ -35,14 +37,17 @@ public class Main extends Application {
 			
 			stage = primaryStage;
 			primaryStage.setTitle("crytech");
-			primaryStage.getIcons().add(new Image ("C:\\Users\\richa\\Pictures\\APDS\\Logopag.jpg"));
+			primaryStage.getIcons().add(new Image ("file:///C:/Users/richa/eclipse-workspace/apds_01/src/images/Logopag.jpg"));
 			
 			BorderPane telaum = FXMLLoader.load(getClass().getResource("telaum.fxml"));
-			um = new Scene(telaum);
+			um = new Scene(telaum,590,545);
 			
 			
-			BorderPane teladois = FXMLLoader.load(getClass().getResource("teladois.fxml"));
-			dois = new Scene(teladois);
+			ScrollPane teladois = FXMLLoader.load(getClass().getResource("teladois.fxml"));
+			dois = new Scene(teladois,784,545);
+			
+			BorderPane telatres = FXMLLoader.load(getClass().getResource("telatres.fxml"));
+			tres = new Scene(telatres,590,545);
 
 			
 			primaryStage.setScene(um);

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controllertelatres">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="voltar" layoutX="505.0" layoutY="53.0" mnemonicParsing="false" onAction="#volta" text="Button" />
+            <Button fx:id="add" layoutX="505.0" layoutY="131.0" mnemonicParsing="false" onAction="#addtable" text="Adicionar" />
+            <TableView fx:id="tabelaprodutos" layoutY="38.0" prefHeight="422.0" prefWidth="222.0">
+               <columns>
+                  <TableColumn fx:id="id1" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="nome" prefWidth="75.0" text="Nome" />
+                  <TableColumn fx:id="preco" prefWidth="75.0" text="Preço" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
